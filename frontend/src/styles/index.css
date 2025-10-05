@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply h-full;
+    font-family: 'Roboto', 'Helvetica', 'Helvetica Neue', 'Nunito Sans', sans-serif;
+  }
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply p-3 bg-brand-primary rounded-md focus:outline-none text-white;
+    @apply hover:bg-red-hover transition-all;
+    @apply focus:ring disabled:opacity-50;
+  }
+  .btn.danger {
+    @apply bg-red-500 hover:bg-red-700;
+  }
+  .input {
+    @apply rounded-md border-gray-300 transition-colors disabled:opacity-50;
+  }
+  .card {
+    @apply p-5 rounded-md bg-primary-white border;
+  }
+  .table-container {
+    @apply border rounded-lg mt-5 shadow overflow-x-auto;
+  }
+  .table-filter {
+    @apply flex flex-col lg:flex-row gap-5 rounded-lg p-3 shadow overflow-x-auto border;
+  }
+  .sidebar {
+    @apply fixed h-full w-72 p-5 shadow flex flex-col transform -translate-x-72 bg-brand-background lg:translate-x-0 transition-transform;
+  }
+  .sidebar.show {
+    @apply translate-x-0 !important;
+  }
+}
