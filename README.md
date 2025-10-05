@@ -9,7 +9,7 @@
 
 ```bash
 # 1. Clonar repositorio y copiar ejemplo de variables de entorno
-git clone <repo-url>
+git clone https://github.com/marto993/urbano-challenge.git
 cd nest-react-admin
 cp .env.example .env
 
