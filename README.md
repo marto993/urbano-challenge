@@ -112,6 +112,6 @@ Sin embargo, presenta **vulnerabilidades de seguridad críticas** que deben ser 
 
 ### Recomendaciones
 
-**Backend:** Puede actualizarse poco a poco siguiendo las guías de migración de la documentación oficial de NestJS.
+**Backend:** Puede actualizarse poco a poco siguiendo las guías de migración de la documentación oficial de NestJS. Implementar rate limit y reglas más robustas para credenciales.
 
-**Frontend:** Aconsejo **rehacerlo desde cero** ya que utiliza Create React App (obsoleto, costoso e imposible de mantener a largo plazo). Mi recomendación personal es utilizar **Vite**.
+**Frontend:** Aconsejo **rehacerlo** ya que utiliza Create React App (obsoleto, costoso e imposible de mantener a largo plazo). Mi recomendación personal es utilizar **Vite**.
